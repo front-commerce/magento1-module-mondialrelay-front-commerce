@@ -11,6 +11,7 @@ URL: `/api/rest/frontcommerce/mondialrelay/:countryCode/:zipcode/pickups`
 
 <details>
 <summary>Example getting a list of pickup near the zipcode 01240 in France:</summary>
+  
 ```
 curl -s http://magento1.test/api/rest/frontcommerce/mondialrelay/fr/01240/pickups
 [
@@ -232,6 +233,7 @@ URL: `/api/rest/frontcommerce/mondialrelay/:countryCode/pickup/:pickupId`
 
 <details>
 <summary>Example getting the details about the pickup with the id `009187` in France:</summary>
+
 ```
 curl -s http://magento1.test/api/rest/frontcommerce/mondialrelay/fr/pickups/012245
 {
