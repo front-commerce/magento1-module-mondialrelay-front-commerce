@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <api2>
+        <resource_groups>
+            <mondialrelay translate="title" module="frontcommerce_mondialrelay">
+                <title>Mondial Relay</title>
+                <sort_order>100</sort_order>
+            </mondialrelay>
+        </resource_groups>
+        <resources>
+            <mondialrelay title="title" module="frontcommerce_mondialrelay">
+                <group>mondialrelay</group>
+                <model>frontcommerce_mondialrelay/api2_mondialrelay</model>
+                <title>Mondial Relay</title>
+                <sort_order>100</sort_order>
+                <privileges>
+                    <customer>
+                        <retrieve>1</retrieve>
+                    </customer>
+                    <guest>
+                        <retrieve>1</retrieve>
+                    </guest>
+                </privileges>
+                <attributes>
+                    <id />
+                    <name />
+                    <street />
+                    <zipcode />
+                    <city />
+                    <latitude />
+                    <longitude />
+                    <countryCode />
+                    <distance />
+                    <schedule />
+                </attributes>
+                <routes>
+                    <route_collection>
+                        <route>frontcommerce/mondialrelay/:countryCode/:zipcode/pickups</route>
+                        <action_type>collection</action_type>
+                    </route_collection>
+                    <route_entity>
+                        <route>frontcommerce/mondialrelay/:countryCode/pickups/:id</route>
+                        <action_type>entity</action_type>
+                    </route_entity>
+                </routes>
+                <versions>1</versions>
+            </mondialrelay>
+        </resources>
+    </api2>
+</config>

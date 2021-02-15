@@ -1,0 +1,4 @@
+<?php
+class FrontCommerce_Mondialrelay_Model_Api2_Mondialrelay_Rest_Guest_V1 extends FrontCommerce_Mondialrelay_Model_Api2_Mondialrelay_Rest_Customer_V1
+{
+}

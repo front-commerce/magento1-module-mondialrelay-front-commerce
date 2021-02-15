@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<config>
+    <modules>
+        <FrontCommerce_Mondialrelay>
+            <version>1.0.0</version>
+        </FrontCommerce_Mondialrelay>
+    </modules>
+    <global>
+        <models>
+            <frontcommerce_mondialrelay>
+                <class>FrontCommerce_Mondialrelay_Model</class>
+            </frontcommerce_mondialrelay>
+        </models>
+        <events>
+            <frontcommerce_api_set_shipping_information_before_save>
+                <observers>
+                    <frontcommerce_mondialrelay_set_pickup_as_shipping_address>
+                        <type>singleton</type>
+                        <class>frontcommerce_mondialrelay/observer_pickup</class>
+                        <method>setPickupAsShippingAddress</method>
+                    </frontcommerce_mondialrelay_set_pickup_as_shipping_address>
+                </observers>
+            </frontcommerce_api_set_shipping_information_before_save>
+            <checkout_type_onepage_save_order_after>
+                <observers>
+                    <frontcommerce_mondialrelay_set_order_shipping_method>
+                        <type>singleton</type>
+                        <class>frontcommerce_mondialrelay/observer_pickup</class>
+                        <method>setOrderShippingMethod</method>
+                    </frontcommerce_mondialrelay_set_order_shipping_method>
+                </observers>
+            </checkout_type_onepage_save_order_after>
+        </events>
+    </global>
+</config>

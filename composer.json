@@ -1,0 +1,28 @@
+{
+  "name": "front-commerce/mondialrelay-magento1-module",
+  "type": "magento-module",
+  "authors": [
+    {
+      "name": "Front-Commerce",
+      "email": "support@front-commerce.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/mhauri/generate-modman"
+    },
+    {
+      "type": "vcs",
+      "url": "https://gitlab.com/front-commerce/magento1-module-front-commerce"
+    }
+  ],
+  "require": {
+    "front-commerce/magento1-module": "*"
+  },
+  "require-dev": {
+    "generate-modman/generate-modman": "dev-master"
+  },
+  "version": "1.0.0"
+}

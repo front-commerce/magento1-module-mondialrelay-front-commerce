@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <FrontCommerce_Mondialrelay>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Man4x_MondialRelay />
+                <FrontCommerce_Integration />
+            </depends>
+        </FrontCommerce_Mondialrelay>
+    </modules>
+</config>
