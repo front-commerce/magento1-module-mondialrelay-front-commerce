@@ -19,7 +19,8 @@
     }
   ],
   "require": {
-    "front-commerce/magento1-module": "*"
+    "front-commerce/magento1-module": "*",
+    "php": ">= 7.0"
   },
   "require-dev": {
     "generate-modman/generate-modman": "dev-master"
