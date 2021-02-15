@@ -25,6 +25,5 @@
   },
   "require-dev": {
     "generate-modman/generate-modman": "dev-master"
-  },
-  "version": "1.0.0"
+  }
 }
