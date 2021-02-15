@@ -3,6 +3,19 @@
 Provides an integration between Man4x_MondialRelay and Front Commerce Magento1
 modules.
 
+## Install
+
+```sh
+composer require front-commerce/mondialrelay-magento1-module
+```
+
+Note: This packages includes a modman file to make easy to install the module in
+Magento with [modman](https://github.com/colinmollenhour/modman).
+
+As this packages uses the configuration defined by Man4x_MondialRelay, this
+modules needs to be installed somehow. A copy of it can be found [in the
+OpenMageModuleFostering organization](https://github.com/OpenMageModuleFostering/man4x_mondialrelay)
+
 ## API
 
 ### Get a list of Mondial Relay pickup points for a zipcode (and a country code)
