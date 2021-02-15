@@ -25,5 +25,8 @@
   },
   "require-dev": {
     "generate-modman/generate-modman": "dev-master"
+  },
+  "suggest": {
+      "openmage-module-fostering\/man4x_mondialrelay": "This package relies on the configuration provided by man4x_mondialrelay, it needs to be installed somehow"
   }
 }
