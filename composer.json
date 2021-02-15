@@ -1,6 +1,7 @@
 {
   "name": "front-commerce/mondialrelay-magento1-module",
   "type": "magento-module",
+  "license": "MIT",
   "authors": [
     {
       "name": "Front-Commerce",
