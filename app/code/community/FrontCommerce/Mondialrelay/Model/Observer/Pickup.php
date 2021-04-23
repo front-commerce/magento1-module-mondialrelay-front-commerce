@@ -56,7 +56,7 @@ class FrontCommerce_Mondialrelay_Model_Observer_Pickup
 
     private function isMondialRelayPickupShipping(array $shippingData): bool
     {
-        return $shippingData['shipping_carrier_code'] === self::MONDIAL_RELAY_PICKUP_CARRIER_CODE;
+        return isset($shippingData['shipping_carrier_code']) && $shippingData['shipping_carrier_code'] === self::MONDIAL_RELAY_PICKUP_CARRIER_CODE;
     }
 
     public function setOrderShippingMethod(Varien_Event_Observer $observer)
